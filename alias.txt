@@ -1,0 +1,95 @@
+alias sudp="sudo"
+
+alias св="cd"
+
+alias ды="ls"
+
+alias myip="wget -qO myip http://www.ipchicken.com/;grep -o "[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}" myip; rm myip"
+
+alias grub_settings="sudo nano /etc/default/grub"
+
+alias grubsettings="sudo nano /etc/default/grub"
+
+alias cls="clear"
+
+alias сды="clear"
+
+alias сдуфк="clear"
+
+alias reboot="sudo reboot"
+
+alias куищще="sudo reboot"
+
+#---Спящий режим---
+
+alias hibernate="sudo pm-hibernate"
+
+#---end---
+
+#---Ждущий режим---
+
+alias standby="dbus-send —system —print-reply —dest="org.freedesktop.UPower" /org/freedesktop/UPower org.freedesktop.UPower.Suspend"
+
+#---end---
+
+#---Выключение---
+
+alias goodbye="dbus-send —system —print-reply —dest="org.freedesktop.ConsoleKit" /org/freedesktop/ConsoleKit/Manager org.freedesktop.ConsoleKit.Manager.Stop"
+
+alias init="sudo init"
+
+#---end---
+
+#---Обновления---
+
+alias update='sudo apt-get update; sudo apt-get upgrade'
+
+#---end---
+
+#---Очистка ubuntu от ненужных файлов - autoclean и autoremove---
+
+alias clean='sudo apt-get autoclean;sudo apt-get autoremove'
+
+#---end---
+
+#---Переводчик гугл---
+
+alias екы='trs'
+
+#---end---
+
+#---Переход к проекту FileTransferSystem----
+
+alias go_fts1='cd /home/ksergey/projects/clion/FileTransferSystem/trunk'
+
+alias go_fts_s1='cd /home/ksergey/projects/clion/FileTransferSystem/trunk/server'
+
+alias go_fts_c1='cd /home/ksergey/projects/clion/FileTransferSystem/trunk/client'
+
+alias go_fts='cd /home/ksergey/projects/clion/FileTransferSystem_v2/trunk'
+
+alias go_fts_s='cd /home/ksergey/projects/clion/FileTransferSystem_v2/trunk/server'
+
+alias go_fts_c='cd /home/ksergey/projects/clion/FileTransferSystem_v2/trunk/client'
+
+#---end---
+
+#---Скомпилировать и Отобразить время компиляции--
+
+alias compile_server='gcc server.c -o server && time gcc server.c -o time'
+
+alias compile_client='gcc client.c -o client && time gcc client.c -o time'
+
+alias compile_servercpp='g++ server.cpp -o servercpp'
+
+alias compile_clientcpp='g++ client.cpp -o clientcpp'
+
+#--end--
+
+#--Компиляция/Отобразить время компиляции/Запуск--
+
+alias Run_server='gcc server.c -o server && time gcc server.c -o time && ./server'
+
+alias Run_client='gcc client.c -o client && time gcc client.c -o time && ./client'
+
+#--end-
